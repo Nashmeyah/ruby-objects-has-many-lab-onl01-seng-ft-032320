@@ -13,6 +13,6 @@ class Post
   end
 
   def author_name
-    @author.post if @author
+    @author.name if @author
   end
 end
