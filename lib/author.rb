@@ -5,8 +5,10 @@ class Author
     @name = name
   end
 
-  def self.all
-    @@all
+  def posts
+    Author.all.select {|post| post.author == self}
   end
+
+  
 
 end
